@@ -1,11 +1,12 @@
 """
 simply a random selector to tell me who to facetime! (deals with imports) .
 """
+import random
 
-names = ["Alice", "Bob", "Charlie", "David", "Eva", "Frank", "Grace", "Hank", "Ivy", "Jack"]
+my_friends = ["Alice", "Bob", "Charlie", "David", "Eva", "Frank", "Grace", "Hank", "Ivy", "Jack"]
 
-def facetime(names):
-    return names.random
+def facetime_choice(name):
+    return random.choice(name)
 
-rando = facetime()
-print rando
+rando = facetime_choice(my_friends)
+print(rando)
